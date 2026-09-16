@@ -186,9 +186,9 @@ def main():
 
     header = (
         "#subscription-userinfo: upload=1073741824000; download=0; total=1073741824000; expire=2524608000\n"
-        "#profile-title: rudy and kafka\n"
+        "#profile-title: rudy and cheesyx\n"
         "#profile-update-interval: 1\n"
-        f"#announce: авторы @rudy_bd @kafka_def // обновлено: {updated} | конфигов: {len(output)}"
+        f"#announce: авторы @rudy_bd @cheesyx // обновлено: {updated} | конфигов: {len(output)}"
     )
 
     result = header + "\n" + "\n".join(output)
