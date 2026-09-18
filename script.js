@@ -1,0 +1,1 @@
+document.querySelectorAll('[data-copy]').forEach(button=>button.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(button.dataset.copy)}catch{prompt('Скопируйте ссылку:',button.dataset.copy)}const t=document.getElementById('toast');t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1600)}));
