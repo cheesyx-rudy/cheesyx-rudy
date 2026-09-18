@@ -3,4 +3,3 @@ https://gitverse.ru/api/repos/Akres/VPN/raw/branch/master/all
 https://owpn-key.duckdns.org/sub/fe345f78893b449d831c22bda3ef5e2a041398c3e9fe440c
 https://raw.githubusercontent.com/kafka-def/enc-kafka-sub/refs/heads/main/enc-kafka-sub.txt
 https://raw.githubusercontent.com/kafka-def/v2configs-sub/refs/heads/main/subscription.txt
-https://ff-id.xyz/Subscription#FreeFastVPN
