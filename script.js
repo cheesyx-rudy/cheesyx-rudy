@@ -8,4 +8,5 @@ if(!reduce){
  document.querySelectorAll('.tilt').forEach(el=>{el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect(),x=e.clientX/r.width-.5,y=e.clientY/r.height-.5;el.style.transform=`perspective(1000px) rotateX(${(-y*5).toFixed(2)}deg) rotateY(${(x*5).toFixed(2)}deg) translateY(-3px)`});el.addEventListener('pointerleave',()=>{el.style.transform=''});});
  window.addEventListener('deviceorientation',e=>{if(typeof e.gamma==='number'&&typeof e.beta==='number'){root.style.setProperty('--mx',(50+Math.max(-1,Math.min(1,e.gamma/35))*24)+'%');root.style.setProperty('--my',(35+Math.max(-1,Math.min(1,(e.beta-35)/35))*20)+'%')}} ,{passive:true});
 }
-const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+const revealEls=document.querySelectorAll('.reveal');
+if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.08});revealEls.forEach(el=>observer.observe(el));}else{revealEls.forEach(el=>el.classList.add('visible'));}
