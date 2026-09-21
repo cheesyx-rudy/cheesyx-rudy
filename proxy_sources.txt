@@ -1,4 +1,4 @@
 https://gitverse.ru/api/repos/Akres/VPN/raw/branch/master/bwl
 https://gitverse.ru/api/repos/Akres/VPN/raw/branch/master/all
-https://raw.githubusercontent.com/kafka-def/enc-kafka-sub/refs/heads/main/enc-kafka-sub.txt
 https://raw.githubusercontent.com/kafka-def/v2configs-sub/refs/heads/main/subscription.txt
+https://raw.githubusercontent.com/cheesyx-rudy/frgt/refs/heads/main/frgt.txt
