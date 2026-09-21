@@ -1,25 +1,147 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#8f2038"><meta name="description" content="rudy and cheesyx — бесплатная агрегированная подписка с прокси-конфигурациями"><title>rudy & cheesyx</title><link rel="stylesheet" href="style.css"></head><body>
-<div class="noise"></div><div class="cursor-orb"></div><div class="scroll-line"></div>
-<header class="topbar"><a class="brand" href="#top"><span class="brand-mark">r</span><span>rudy <i>&</i> cheesyx</span></a><nav><a href="#subscriptions">Подписки</a><a href="#how">Как работает</a><a href="#clients">Клиенты</a><a href="#contacts">Контакты</a></nav><a class="tg" href="https://t.me/parser_url" target="_blank">Telegram <span>↗</span></a></header>
-<main id="top">
-<section class="hero-v2 reveal">
-  <div class="hero-copy"><div class="eyebrow"><span class="pulse-dot"></span> OPEN PROJECT <b>·</b> FREE SUBSCRIPTION</div>
-  <h1><span>Не один</span><span>сервер.</span><em>Целая подборка.</em></h1>
-  <p>rudy and cheesyx собирает и обрабатывает прокси-конфигурации из открытых источников, превращая разрозненные данные в готовые подписки.</p>
-  <div class="actions"><a class="btn primary" href="#subscriptions"><span>Получить подписку</span><strong>↓</strong></a><a class="btn ghost" href="https://github.com/cheesyx-rudy/cheesyx-rudy" target="_blank"><span>GitHub</span><strong>↗</strong></a></div>
-  <div class="microfacts"><span>FREE</span><span>NO REGISTRATION</span><span>OPEN SOURCE</span></div></div>
-  <div class="hero-visual"><div class="halo halo-a"></div><div class="halo halo-b"></div><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
-    <div class="terminal-v2 tilt"><div class="terminal-head"><span class="window-dots"><i></i><i></i><i></i></span><b>rudy-and-cheesyx</b><span>LIVE</span></div><div class="terminal-body"><div><small>01</small><span>$</span> collect --sources public</div><div><small>02</small><span>›</span> parsing proxy urls...</div><div class="done"><small>03</small><span>✓</span> deduplicating configs</div><div class="done"><small>04</small><span>✓</span> filtering entries</div><div class="done"><small>05</small><span>✓</span> building subscriptions</div><div class="result"><small>READY</small><b>proxies.txt</b><b>config.yaml</b></div></div></div>
-    <div class="floating-chip chip-one">VLESS</div><div class="floating-chip chip-two">MIHOMO</div><div class="floating-chip chip-three">TUIC</div>
-  </div>
-</section>
-<div class="protocol-marquee" aria-label="Поддерживаемые протоколы"><div class="marquee-track"><div class="marquee-group"><span>VLESS</span><span>VMess</span><span>Trojan</span><span>Shadowsocks</span><span>Hysteria2</span><span>TUIC</span><span>AnyTLS</span><span>SOCKS</span><span>HTTP</span></div><div class="marquee-group" aria-hidden="true"><span>VLESS</span><span>VMess</span><span>Trojan</span><span>Shadowsocks</span><span>Hysteria2</span><span>TUIC</span><span>AnyTLS</span><span>SOCKS</span><span>HTTP</span></div></div></div>
-<section id="subscriptions" class="section-v2 reveal"><div class="section-intro"><div><small class="label">01 / SUBSCRIPTIONS</small><h2>Два входа.<br><em>Один проект.</em></h2></div><p>Выбирай формат под свой клиент. Оба URL обновляются автоматически.</p></div><div class="sub-grid">
-<article class="sub-card featured tilt"><div class="card-top"><span>POPULAR · 01</span><b>↗</b></div><div class="number">01</div><h3>Proxy URL</h3><p>Обычная подписка со ссылками на отдельные прокси-конфигурации.</p><code>VLESS · VMess · Trojan · SS · Hysteria2 · TUIC</code><div class="card-actions"><a href="https://raw.githubusercontent.com/cheesyx-rudy/cheesyx-rudy/refs/heads/main/proxies.txt" target="_blank">Открыть ↗</a><button data-copy="https://raw.githubusercontent.com/cheesyx-rudy/cheesyx-rudy/refs/heads/main/proxies.txt">Скопировать URL</button></div><div class="card-glow"></div></article>
-<article class="sub-card tilt"><div class="card-top"><span>MIHOMO · 02</span><b>⌁</b></div><div class="number">02</div><h3>Clash / Mihomo</h3><p>Готовая YAML-подписка для клиентов на базе Mihomo / Clash Meta.</p><code>YAML · MIHOMO · CLASH META</code><div class="card-actions"><a href="https://raw.githubusercontent.com/cheesyx-rudy/cheesyx-rudy/refs/heads/main/config.yaml" target="_blank">Открыть ↗</a><button data-copy="https://raw.githubusercontent.com/cheesyx-rudy/cheesyx-rudy/refs/heads/main/config.yaml">Скопировать URL</button></div></article>
-</div></section>
-<section id="how" class="process reveal"><div class="section-intro"><div><small class="label">02 / PIPELINE</small><h2>Что происходит<br><em>внутри?</em></h2></div><p>Путь конфигурации от внешнего источника до готовой подписки.</p></div><div class="process-line"></div><div class="process-grid"><div class="process-item"><b>01</b><span class="process-icon">◌</span><h3>Источники</h3><p>Собираем конфигурации из доступных внешних подписок.</p></div><div class="process-item"><b>02</b><span class="process-icon">⌘</span><h3>Парсинг</h3><p>Извлекаем поддерживаемые proxy URL и приводим данные к единому виду.</p></div><div class="process-item"><b>03</b><span class="process-icon">◇</span><h3>Фильтрация</h3><p>Убираем дубликаты и неподходящие записи. Нерабочие могут удаляться вручную.</p></div><div class="process-item"><b>04</b><span class="process-icon">↗</span><h3>Сборка</h3><p>Формируем URL-подписку и YAML-подписку для Mihomo/Clash.</p></div></div><div class="fact-strip"><div><b>01</b><strong>Без обещаний 100% uptime</strong><span>Внешние конфиги могут перестать работать.</span></div><div><b>02</b><strong>Не владеем чужими узлами</strong><span>Проект агрегирует сторонние источники.</span></div><div><b>03</b><strong>Open source</strong><span>Код парсеров находится на GitHub.</span></div></div></section>
-<section id="clients" class="section-v2 clients-section reveal"><div class="section-intro"><div><small class="label">03 / CLIENTS</small><h2>Чем<br><em>подключаться?</em></h2></div><p>Ссылки ведут на актуальные страницы релизов и распространения проектов.</p></div><div class="client-list"><a href="https://github.com/2dust/v2rayN/releases" target="_blank"><b>01</b><div><h3>v2rayN</h3><span>Windows · macOS · Linux</span></div><i>↗</i></a><a href="https://github.com/hiddify/hiddify-app/releases" target="_blank"><b>02</b><div><h3>Hiddify</h3><span>Windows · macOS · Linux · Android · iOS</span></div><i>↗</i></a><a href="https://github.com/Clash-Verge-rev/clash-verge-rev/releases" target="_blank"><b>03</b><div><h3>Clash Verge Rev</h3><span>Windows · macOS · Linux</span></div><i>↗</i></a><a href="https://github.com/2dust/v2rayNG/releases" target="_blank"><b>04</b><div><h3>v2rayNG</h3><span>Android</span></div><i>↗</i></a><a href="https://4pda.to/forum/index.php?showtopic=1121122" target="_blank"><b>05</b><div><h3>NekoBox+</h3><span>Android · 4PDA</span></div><i>↗</i></a><a href="https://github.com/MetaCubeX/ClashMetaForAndroid/releases" target="_blank"><b>06</b><div><h3>Clash Meta</h3><span>Android</span></div><i>↗</i></a><a href="https://github.com/chen08209/FlClash/releases" target="_blank"><b>07</b><div><h3>FlClash</h3><span>Android · Windows · macOS · Linux</span></div><i>↗</i></a></div><p class="warning">Скачивайте приложения только с указанных страниц проектов. Для NekoBox+ актуальная страница сборок находится на 4PDA.</p></section>
-<section id="contacts" class="contacts-v2 reveal"><div class="contact-big"><small class="label">04 / PEOPLE</small><h2>Проект делают<br><em>люди.</em></h2><p>Вопрос, предложение или желание обсудить проект? Мы рядом.</p><a class="btn primary" href="https://t.me/parser_url" target="_blank"><span>Telegram-канал</span><strong>↗</strong></a></div><div class="people-v2"><a href="https://t.me/rudy_bd" target="_blank"><small>ОПЕРАТОР ПОДПИСКИ / TELEGRAM-КАНАЛА</small><b>@rudy_bd</b><i>↗</i></a><a href="https://t.me/cheesyx" target="_blank"><small>АДМИНИСТРАТОР КАНАЛА / ОПЕРАТОР ПОДПИСКИ</small><b>@cheesyx</b><i>↗</i></a><a href="https://github.com/cheesyx-rudy/cheesyx-rudy" target="_blank"><small>OPEN SOURCE</small><b>GitHub repository</b><i>↗</i></a></div></section>
-<section class="final-cta reveal"><div class="starburst">★</div><small>KEEP IT OPEN</small><h2>Полезно?<br>Поставь <em>звезду.</em></h2><a class="btn primary" href="https://github.com/cheesyx-rudy/cheesyx-rudy" target="_blank"><span>Открыть репозиторий</span><strong>↗</strong></a></section>
-</main><footer><b>rudy & cheesyx</b><span>proxy aggregation project</span><div><a href="https://t.me/parser_url">Telegram</a> · <a href="https://github.com/cheesyx-rudy/cheesyx-rudy">GitHub</a></div></footer><div id="toast">URL скопирован</div><script src="script.js"></script></body>
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#090607">
+<meta name="description" content="rudy & cheesyx — бесплатные агрегированные прокси-подписки VLESS, VMess, Trojan, Shadowsocks, Hysteria2, TUIC и другие.">
+<title>rudy & cheesyx</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:wght@400;500;600&family=Onest:wght@400;500;600;700;800&family=Unbounded:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<div class="bg" aria-hidden="true">
+  <span class="shape shape-a"></span><span class="shape shape-b"></span><span class="shape shape-c"></span>
+  <span class="grid"></span>
+</div>
+
+<header class="topbar">
+  <a class="brand" href="#top" aria-label="rudy and cheesyx">
+    <span class="brand-mark">r</span><span>rudy <i>&amp;</i> cheesyx</span>
+  </a>
+  <nav>
+    <a href="#subscriptions">Подписки</a>
+    <a href="#about">О проекте</a>
+    <a href="#clients">Клиенты</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <a class="top-action" href="https://t.me/parser_url" target="_blank" rel="noopener">Telegram <b>↗</b></a>
+</header>
+
+<main id="top" class="page">
+  <section class="hero reveal">
+    <div class="hero-badge"><span></span> OPEN PROJECT <b>·</b> FREE SUBSCRIPTION</div>
+    <h1>rudy <em>&amp;</em><br><strong>cheesyx</strong></h1>
+    <p class="hero-text">Бесплатная агрегированная подписка с прокси-конфигурациями из открытых источников. Скопируйте ссылку и добавьте её в совместимый клиент.</p>
+    <div class="hero-actions">
+      <a class="btn filled" href="#subscriptions">Получить подписку <b>↓</b></a>
+      <a class="btn outlined" href="https://github.com/cheesyx-rudy/cheesyx-rudy" target="_blank" rel="noopener">GitHub <b>↗</b></a>
+    </div>
+    <div class="stats">
+      <div class="stat stat-a"><small>ФОРМАТОВ</small><strong data-count="9">0</strong><span>VLESS · VMess · Hysteria2…</span></div>
+      <div class="stat stat-b"><small>ПОДПИСКИ</small><strong data-count="2">0</strong><span>URL + Mihomo / Clash</span></div>
+      <div class="stat stat-c"><small>ОБНОВЛЕНИЯ</small><strong>LIVE</strong><span>через GitHub Actions</span></div>
+    </div>
+  </section>
+
+  <section id="subscriptions" class="catalog reveal">
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-tab="subs" role="tab" aria-selected="true">Подписки</button>
+      <button class="tab" data-tab="details" role="tab" aria-selected="false">Как это работает</button>
+    </div>
+
+    <div class="tab-panel active" id="subs" role="tabpanel">
+      <div class="panel-head">
+        <div><small>01 / SUBSCRIPTIONS</small><h2>Выбери<br><em>формат.</em></h2></div>
+        <p>Две готовые ссылки для разных клиентов. Ничего регистрировать или оплачивать не нужно.</p>
+      </div>
+      <div class="subscription-list">
+        <article class="subscription featured-card">
+          <div class="sub-main">
+            <div class="sub-index">01</div>
+            <div><div class="sub-kicker">PROXY URL · UNIVERSAL</div><h3>Обычная подписка</h3><p>Набор отдельных proxy URL. Подходит клиентам, которые принимают VLESS, VMess, Trojan, SS, Hysteria2, TUIC и другие поддерживаемые форматы.</p></div>
+          </div>
+          <div class="sub-bottom"><code>proxies.txt</code><div class="sub-actions"><button class="copy" data-copy="https://raw.githubusercontent.com/cheesyx-rudy/cheesyx-rudy/refs/heads/main/proxies.txt">Скопировать</button><a href="https://raw.githubusercontent.com/cheesyx-rudy/cheesyx-rudy/refs/heads/main/proxies.txt" target="_blank" rel="noopener">Открыть ↗</a></div></div>
+        </article>
+        <article class="subscription">
+          <div class="sub-main">
+            <div class="sub-index">02</div>
+            <div><div class="sub-kicker">MIHOMO · CLASH META</div><h3>YAML-подписка</h3><p>Готовый конфиг для клиентов на базе Mihomo / Clash Meta. Используйте его там, где нужен YAML-формат.</p></div>
+          </div>
+          <div class="sub-bottom"><code>config.yaml</code><div class="sub-actions"><button class="copy" data-copy="https://raw.githubusercontent.com/cheesyx-rudy/cheesyx-rudy/refs/heads/main/config.yaml">Скопировать</button><a href="https://raw.githubusercontent.com/cheesyx-rudy/cheesyx-rudy/refs/heads/main/config.yaml" target="_blank" rel="noopener">Открыть ↗</a></div></div>
+        </article>
+      </div>
+      <div class="protocols"><small>ПОДДЕРЖИВАЕМЫЕ ПРОТОКОЛЫ</small><div class="chips"><span>VLESS</span><span>VMess</span><span>Trojan</span><span>Shadowsocks</span><span>Hysteria2</span><span>TUIC</span><span>AnyTLS</span><span>SOCKS</span><span>HTTP</span></div></div>
+    </div>
+
+    <div class="tab-panel" id="details" role="tabpanel">
+      <div class="panel-head"><div><small>02 / PIPELINE</small><h2>От источника<br><em>до ссылки.</em></h2></div><p>Проект не владеет узлами. Мы собираем открытые источники, обрабатываем данные и публикуем результат.</p></div>
+      <div class="steps">
+        <div><b>01</b><strong>Сбор</strong><p>Получаем конфигурации из доступных внешних источников.</p></div>
+        <div><b>02</b><strong>Парсинг</strong><p>Извлекаем поддерживаемые proxy URL и приводим их к единому виду.</p></div>
+        <div><b>03</b><strong>Фильтрация</strong><p>Убираем дубликаты и неподходящие записи; известный мусор удаляется вручную.</p></div>
+        <div><b>04</b><strong>Сборка</strong><p>Формируем proxies.txt и config.yaml, после чего публикуем обновление.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="info-section reveal">
+    <div class="section-label">03 / ABOUT</div>
+    <div class="split-heading"><h2>Не обещаем<br><em>магии.</em></h2><p>Сторонние конфигурации могут перестать работать в любой момент. Поэтому задача проекта — не обещать 100% доступность каждого узла, а держать подписку максимально чистой и полезной.</p></div>
+    <div class="info-grid">
+      <article><span>01</span><h3>Без регистрации</h3><p>Подписка распространяется бесплатно. Просто копируете URL и добавляете его в клиент.</p></article>
+      <article><span>02</span><h3>Open source</h3><p>Парсер и автоматизация находятся в открытом репозитории GitHub.</p></article>
+      <article><span>03</span><h3>Не владеем узлами</h3><p>Конфигурации приходят из сторонних источников. Их работоспособность не контролируется нами постоянно.</p></article>
+    </div>
+  </section>
+
+  <section id="clients" class="clients reveal">
+    <div class="section-label">04 / CLIENTS</div>
+    <div class="split-heading"><h2>Чем<br><em>подключаться?</em></h2><p>Актуальные страницы релизов клиентов, совместимых с форматами подписки.</p></div>
+    <div class="client-list">
+      <a href="https://github.com/2dust/v2rayN/releases" target="_blank" rel="noopener"><b>01</b><span><strong>v2rayN</strong><small>Windows · macOS · Linux</small></span><i>↗</i></a>
+      <a href="https://github.com/hiddify/hiddify-app/releases" target="_blank" rel="noopener"><b>02</b><span><strong>Hiddify</strong><small>Windows · macOS · Linux · Android · iOS</small></span><i>↗</i></a>
+      <a href="https://github.com/Clash-Verge-rev/clash-verge-rev/releases" target="_blank" rel="noopener"><b>03</b><span><strong>Clash Verge Rev</strong><small>Windows · macOS · Linux</small></span><i>↗</i></a>
+      <a href="https://github.com/2dust/v2rayNG/releases" target="_blank" rel="noopener"><b>04</b><span><strong>v2rayNG</strong><small>Android</small></span><i>↗</i></a>
+      <a href="https://4pda.to/forum/index.php?showtopic=1121122" target="_blank" rel="noopener"><b>05</b><span><strong>NekoBox+</strong><small>Android · 4PDA</small></span><i>↗</i></a>
+      <a href="https://github.com/MetaCubeX/ClashMetaForAndroid/releases" target="_blank" rel="noopener"><b>06</b><span><strong>Clash Meta</strong><small>Android</small></span><i>↗</i></a>
+      <a href="https://github.com/chen08209/FlClash/releases" target="_blank" rel="noopener"><b>07</b><span><strong>FlClash</strong><small>Android · Windows · macOS · Linux</small></span><i>↗</i></a>
+    </div>
+    <p class="note">Скачивайте приложения только с указанных страниц проектов. Для NekoBox+ ссылка ведёт на актуальную страницу распространения на 4PDA.</p>
+  </section>
+
+  <section id="faq" class="faq reveal">
+    <div class="section-label">05 / FAQ</div>
+    <div class="split-heading"><h2>Частые<br><em>вопросы.</em></h2><p>Коротко о том, что важно знать перед использованием подписки.</p></div>
+    <div class="faq-list">
+      <details open><summary>Это платная подписка?</summary><p>Нет. Проект распространяет агрегированные ссылки бесплатно.</p></details>
+      <details><summary>Какая ссылка мне нужна?</summary><p><b>proxies.txt</b> — обычный список proxy URL для совместимых клиентов. <b>config.yaml</b> — YAML для Mihomo / Clash Meta.</p></details>
+      <details><summary>Все конфигурации обязательно работают?</summary><p>Нет. Конфигурации сторонние и могут перестать работать. Мы стараемся уменьшать количество мусора, но не гарантируем 100% работоспособность каждого узла.</p></details>
+      <details><summary>Как часто обновляется подписка?</summary><p>Обновления собираются автоматически через GitHub Actions, а известные проблемные записи могут удаляться вручную.</p></details>
+      <details><summary>Можно ли предложить источник?</summary><p>Да. Напишите в Telegram-канал проекта или свяжитесь с операторами.</p></details>
+      <details><summary>Почему ссылка иногда открывается как текст?</summary><p>Это нормально: raw-ссылка ведёт непосредственно на содержимое подписки. Её нужно добавить в клиент как URL подписки, а не открывать как обычный сайт.</p></details>
+    </div>
+  </section>
+
+  <section id="contacts" class="contacts reveal">
+    <div class="contact-card"><div class="section-label">06 / CONTACTS</div><h2>Есть вопрос?<br><em>Напиши.</em></h2><p>Предложения, замечания и вопросы по проекту — в Telegram или GitHub.</p><a class="btn filled" href="https://t.me/parser_url" target="_blank" rel="noopener">Telegram-канал <b>↗</b></a></div>
+    <div class="people">
+      <a href="https://t.me/rudy_bd" target="_blank" rel="noopener"><small>ОПЕРАТОР ПОДПИСКИ / КАНАЛА</small><strong>@rudy_bd</strong><b>↗</b></a>
+      <a href="https://t.me/cheesyx" target="_blank" rel="noopener"><small>АДМИНИСТРАТОР / ОПЕРАТОР</small><strong>@cheesyx</strong><b>↗</b></a>
+      <a href="https://github.com/cheesyx-rudy/cheesyx-rudy" target="_blank" rel="noopener"><small>OPEN SOURCE</small><strong>GitHub repository</strong><b>↗</b></a>
+    </div>
+  </section>
+
+  <section class="star-cta reveal">
+    <div class="star-icon">★</div><small>KEEP IT OPEN</small><h2>Полезно?<br><em>Поставь звезду.</em></h2><p>Это помогает проекту оставаться заметным и открытым.</p><a class="btn filled" href="https://github.com/cheesyx-rudy/cheesyx-rudy" target="_blank" rel="noopener">Открыть GitHub <b>↗</b></a>
+  </section>
+</main>
+
+<footer><strong>rudy &amp; cheesyx</strong><span>proxy aggregation project</span><span><a href="https://t.me/parser_url">Telegram</a> · <a href="https://github.com/cheesyx-rudy/cheesyx-rudy">GitHub</a></span></footer>
+<div class="toast" id="toast">Ссылка скопирована</div>
+<script src="script.js"></script>
+</body>
+</html>
