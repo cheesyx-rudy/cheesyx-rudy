@@ -91,7 +91,7 @@ def load_dead_numbers():
     return numbers
 
 def write_snapshot(proxies):
-    BASE_DIR / "parsed_proxies.txt".write_text(
+    (BASE_DIR / "parsed_proxies.txt").write_text(
         "\n".join(proxies) + ("\n" if proxies else ""),
         encoding="utf-8"
     )
