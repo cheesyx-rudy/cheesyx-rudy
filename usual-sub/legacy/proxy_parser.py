@@ -3,8 +3,9 @@ import argparse, base64, json, re, urllib.parse, urllib.request
 from pathlib import Path
 from datetime import datetime, timezone, timedelta
 
-SOURCES_FILE = Path("proxy_sources.txt")
-OUTPUT_FILE = Path("proxies.txt")
+BASE_DIR = Path(__file__).resolve().parent
+SOURCES_FILE = BASE_DIR / "proxy_sources.txt"
+OUTPUT_FILE = BASE_DIR / "proxies.txt"
 MAX_BYTES = 20 * 1024 * 1024
 
 URI_RE = re.compile(
@@ -77,7 +78,7 @@ def rename_uri(uri, number):
     return uri.split("#", 1)[0] + "#" + urllib.parse.quote(label, safe="")
 
 def load_dead_numbers():
-    dead_file = Path("dead.txt")
+    dead_file = BASE_DIR / "dead.txt"
     if not dead_file.exists():
         return set()
     numbers = set()
@@ -90,13 +91,13 @@ def load_dead_numbers():
     return numbers
 
 def write_snapshot(proxies):
-    Path("parsed_proxies.txt").write_text(
+    BASE_DIR / "parsed_proxies.txt".write_text(
         "\n".join(proxies) + ("\n" if proxies else ""),
         encoding="utf-8"
     )
 
 def read_snapshot():
-    path = Path("parsed_proxies.txt")
+    path = BASE_DIR / "parsed_proxies.txt"
     if not path.exists():
         raise SystemExit("parsed_proxies.txt not found")
     return [x.strip() for x in path.read_text(encoding="utf-8").splitlines() if x.strip()]
@@ -119,8 +120,8 @@ def main():
     parser.add_argument("--mode", choices=("fresh", "cleanup"), default="fresh")
     args = parser.parse_args()
 
-    snapshot = Path("parsed_proxies.txt")
-    dead_file = Path("dead.txt")
+    snapshot = BASE_DIR / "parsed_proxies.txt"
+    dead_file = BASE_DIR / "dead.txt"
 
     # Fresh mode fetches/parses sources and replaces the frozen snapshot.
     # Cleanup mode NEVER fetches sources: it uses the snapshot from the

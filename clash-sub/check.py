@@ -9,11 +9,9 @@ import urllib.request
 import yaml
 
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CLASH_DIR = os.path.dirname(os.path.abspath(__file__))
-
-CONFIG_FILE = os.path.join(CLASH_DIR, "config.yaml")
-CHECK_CONFIG_FILE = os.path.join(CLASH_DIR, "check-config.yaml")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+CONFIG_FILE = os.path.join(BASE_DIR, "config.yaml")
+CHECK_CONFIG_FILE = os.path.join(BASE_DIR, "check-config.yaml")
 
 MIHOMO_BINARY = os.path.join(BASE_DIR, "mihomo")
 
@@ -106,7 +104,7 @@ def start_mihomo():
         [
             MIHOMO_BINARY,
             "-d",
-            CLASH_DIR,
+            ".",
             "-f",
             CHECK_CONFIG_FILE,
         ],

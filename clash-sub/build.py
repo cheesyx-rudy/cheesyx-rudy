@@ -15,11 +15,10 @@ import yaml
 
 # ----------------------------- Settings -----------------------------
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CLASH_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MIHOMO_PATH = os.path.join(BASE_DIR, "mihomo")
-OUTPUT_CONFIG = os.path.join(CLASH_DIR, "config.yaml")
-SOURCES_FILE = os.path.join(CLASH_DIR, "sources.txt")
+OUTPUT_CONFIG = os.path.join(BASE_DIR, "config.yaml")
+SOURCES_FILE = os.path.join(BASE_DIR, "sources.txt")
 SOURCE_TIMEOUT_SECONDS = 30
 
 VLESS_RE = re.compile(r"vless://[^\s\"'<>]+")
@@ -684,7 +683,7 @@ def main():
 
     fd, temporary_config = tempfile.mkstemp(
         suffix=".yaml",
-        dir=".",
+        dir=BASE_DIR,
     )
     os.close(fd)
 
