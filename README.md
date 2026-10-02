@@ -6,17 +6,17 @@
 
 ## 📦 Подписки
 
-### `usual-sub/frgt.txt` — обычная подписка
+### `usual-sub/legacy/proxies.txt` — обычная подписка
 
 Обычная подписка с proxy URL.
 
 **Подписка:**
 
 ```text
-https://raw.githubusercontent.com/cheesyx-rudy/cheesyx-rudy/refs/heads/main/usual-sub/frgt.txt
+https://raw.githubusercontent.com/cheesyx-rudy/cheesyx-rudy/refs/heads/main/usual-sub/legacy/proxies.txt
 ```
 
-[Открыть usual-sub/frgt.txt](https://raw.githubusercontent.com/cheesyx-rudy/cheesyx-rudy/refs/heads/main/usual-sub/frgt.txt)
+[Открыть usual-sub/legacy/proxies.txt](https://raw.githubusercontent.com/cheesyx-rudy/cheesyx-rudy/refs/heads/main/usual-sub/legacy/proxies.txt)
 
 ### `clash-sub/config.yaml` — Mihomo / Clash Meta
 
@@ -37,12 +37,12 @@ https://raw.githubusercontent.com/cheesyx-rudy/cheesyx-rudy/refs/heads/main/clas
 │     Источники конфигов   │
 └────────────┬─────────────┘
              │
-             ├──────────────► usual-sub/frgt.txt
+             ├──────────────► usual-sub/legacy/proxies.txt
              │
              └──────────────► clash-sub/config.yaml
 ```
 
-Обычная подписка обновляется отдельным парсером в `usual-sub/parser.py`.
+Обычная подписка обновляется парсером в `usual-sub/legacy/proxy_parser.py`.
 Clash / Mihomo подписка собирается парсером в `clash-sub/build.py`.
 Обе подписки обновляются автоматически через **GitHub Actions**.
 
