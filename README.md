@@ -30,6 +30,19 @@ https://raw.githubusercontent.com/cheesyx-rudy/cheesyx-rudy/refs/heads/main/clas
 
 [Открыть clash-sub/config.yaml](https://raw.githubusercontent.com/cheesyx-rudy/cheesyx-rudy/refs/heads/main/clash-sub/config.yaml)
 
+
+### `usual-sub/proxies.txt` — Подписка обновляемая при белых списках, развернута на hub.mos.ru
+
+Подписка, которая автоматически обновляется при изменениях в белых списках.
+
+**Подписка:**
+
+```text
+https://hub.mos.ru/cheesyx/cheesyx-rudy/raw/main/usual-sub/proxies.txt
+```
+
+[Открыть usual-sub/proxies.txt](https://hub.mos.ru/cheesyx/cheesyx-rudy/raw/main/usual-sub/proxies.txt)
+
 ## ⚙️ Как это работает
 
 ```text
