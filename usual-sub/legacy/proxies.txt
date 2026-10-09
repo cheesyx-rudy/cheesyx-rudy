@@ -1,7 +1,7 @@
 #subscription-userinfo: upload=1073741824000; download=0; total=1073741824000; expire=2524608000
 #profile-title: rudy and cheesyx
 #profile-update-interval: 1
-#announce: вся важная информация в канале @Parser_url // авторы @rudy_bd @cheesyx // обновлено: 09.10.2026 05:27 | конфигов: 554
+#announce: вся важная информация в канале @Parser_url // авторы @rudy_bd @cheesyx // обновлено: 09.10.2026 12:32 | конфигов: 554
 vless://adc11f30-e4cb-4985-bf5e-f9ded69c019f@90.156.218.163:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI&security=reality&sid=db04ce8bdb8900f1&sni=eh.vk.ru&type=tcp#%F0%9F%87%A7%F0%9F%87%A9%20%D0%91%D0%B0%D0%BD%D0%B3%D0%BB%D0%B0%D0%B4%D0%B5%D1%88%20%7C%20Bangladesh%20%231
 vless://adc11f30-e4cb-4985-bf5e-f9ded69c019f@109.120.181.153:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI&security=reality&sid=db04ce8bdb8900f1&sni=eh.vk.ru&type=tcp#%F0%9F%87%A7%F0%9F%87%A9%20%D0%91%D0%B0%D0%BD%D0%B3%D0%BB%D0%B0%D0%B4%D0%B5%D1%88%20%7C%20Bangladesh%20%232
 vless://eac04622-531b-0009-b85f-3c2ee67565c6@82.202.138.16:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=l9b1AQuRbk4WA3hUVHI3mGBW-X5gNKFF72fWvismAS0&security=reality&sni=ru-001.zapretu.net&type=tcp#%F0%9F%87%A7%F0%9F%87%A9%20%D0%91%D0%B0%D0%BD%D0%B3%D0%BB%D0%B0%D0%B4%D0%B5%D1%88%20%7C%20Bangladesh%20%233
