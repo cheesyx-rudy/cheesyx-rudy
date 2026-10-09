@@ -1,7 +1,7 @@
 #subscription-userinfo: upload=1073741824000; download=0; total=1073741824000; expire=2524608000
 #profile-title: rudy and cheesyx
 #profile-update-interval: 1
-#announce: вся важная информация в канале @Parser_url // авторы @rudy_bd @cheesyx // обновлено: 09.10.2026 20:08 | конфигов: 704
+#announce: вся важная информация в канале @Parser_url // авторы @rudy_bd @cheesyx // обновлено: 10.10.2026 00:50 | конфигов: 704
 vless://267b3a79-81f2-42ac-a409-c23b05b6329d@94.141.162.88:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=K9e4gQJX1KLEmvsKOp9CtJ-o-L4EIpYOPTg5Spo9MWs&security=reality&sid=65ceab72c331f307&sni=srv88.bbobr.win&type=tcp#%F0%9F%87%A7%F0%9F%87%A9%20%D0%91%D0%B0%D0%BD%D0%B3%D0%BB%D0%B0%D0%B4%D0%B5%D1%88%20%7C%20Bangladesh%20%231
 vless://2c634977-584e-4e1f-b501-1b70c77a6743@78.159.250.84:2053?encryption=none&fp=firefox&host=summerculture.net&path=/api/v1/upload&security=tls&sni=summerculture.net&type=xhttp#%F0%9F%87%A7%F0%9F%87%A9%20%D0%91%D0%B0%D0%BD%D0%B3%D0%BB%D0%B0%D0%B4%D0%B5%D1%88%20%7C%20Bangladesh%20%232
 vless://95a608b6-bff1-4e10-bb61-0a39f221bb7d@78.159.246.85:2053?encryption=none&extra={#%F0%9F%87%A7%F0%9F%87%A9%20%D0%91%D0%B0%D0%BD%D0%B3%D0%BB%D0%B0%D0%B4%D0%B5%D1%88%20%7C%20Bangladesh%20%233
