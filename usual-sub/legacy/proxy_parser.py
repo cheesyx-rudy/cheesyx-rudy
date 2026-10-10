@@ -74,7 +74,7 @@ def is_mlkem_encryption_proxy(uri):
     return False
 
 def rename_uri(uri, number):
-    label = f"🇧🇩 Бангладеш | Bangladesh #{number}"
+    label = f"Cluster | Кластер #{number}"
     return uri.split("#", 1)[0] + "#" + urllib.parse.quote(label, safe="")
 
 def load_dead_numbers():
