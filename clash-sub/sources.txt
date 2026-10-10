@@ -1,5 +1,5 @@
-https://gitverse.ru/api/repos/Akres/VPN/raw/branch/master/all
-https://gitverse.ru/api/repos/Akres/VPN/raw/branch/master/bwl
+https://hub.mos.ru/akres/vpn/-/raw/main/bwl
+https://hub.mos.ru/akres/vpn/-/raw/main/all
 https://sub.vlessfo.ru/vlessforu/working_configs.txt
 https://admin1.vspboost.ru/s/PHqyxX
 https://github.com/Remiuc0ff/Hiddifycode/raw/refs/heads/main/Owner-@remiuc
